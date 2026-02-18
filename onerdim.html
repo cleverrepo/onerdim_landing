@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onerdim - Real recommendations from real people</title>
+    <link rel="stylesheet" href="./onerdim.css">
+    <link rel="icon" href="./onerdim_social.png" type="image/x-icon" sizes="32x32">
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- QR Code library -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+</head>
+
+<body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">Ö</span>
+                <span>onerdim</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#features" class="nav-link">What we're about</a></li>
+                <li><a href="#how-it-works" class="nav-link">How it works</a></li>
+                <li><a href="#guidelines" class="nav-link">Our vibe</a></li>
+                <li><a href="#testimonials" class="nav-link">Stories</a></li>
+                <li><a href="#download" class="nav-cta"><i class="fas fa-download" style="margin-right: 0.5rem;"></i>Get the app</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#features" class="nav-link">What we're about</a>
+            <a href="#how-it-works" class="nav-link">How it works</a>
+            <a href="#guidelines" class="nav-link">Our vibe</a>
+            <a href="#testimonials" class="nav-link">Stories</a>
+            <a href="#download" class="nav-cta"><i class="fas fa-download" style="margin-right: 0.5rem;"></i>Get the app</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">onerdim</h1>
+                <p class="hero-subtitle">Real people. Real opinions. No fake stuff.</p>
+                <p class="hero-description">
+                    Tired of sponsored posts and paid reviews? Same. Onerdim is where everyday folks share what they actually bought, actually used, and actually think.
+                </p>
+
+                <div class="download-card">
+                    <h3 class="download-title">Join the club</h3>
+                    <p style="margin-bottom: 1.5rem; color: rgba(255, 255, 255, 0.8);">
+                        Scan or tap to download. Takes like 30 seconds.
+                    </p>
+                    
+                    <div class="download-options">
+                        <div class="qr-container">
+                            <div class="qr-code" id="qrCodeContainer">
+                                <!-- QR will be generated here -->
+                            </div>
+                            <div class="qr-hint"><i class="fas fa-camera"></i> Scan with your phone</div>
+                        </div>
+                        
+                        <div class="store-buttons">
+                            <a href="https://play.google.com/store/apps/details?id=com.onderdim.app.onerdim" 
+                               class="store-btn" 
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <i class="fab fa-google-play store-icon"></i>
+                                <div class="store-text">
+                                    <span class="store-small">GET IT ON</span>
+                                    <span class="store-large">Google Play</span>
+                                </div>
+                            </a>
+                            <a href="#" 
+                               class="store-btn"
+                               onclick="alert('iOS version coming soon! We\'ll let you know when it drops.'); return false;">
+                                <i class="fab fa-apple store-icon"></i>
+                                <div class="store-text">
+                                    <span class="store-small">Download on the</span>
+                                    <span class="store-large">App Store</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="phone-mockup">
+                <div class="phone">
+                    <div class="phone-screen">
+                        <div class="notch"></div>
+                        <div class="screen-content">
+                            <div class="app-post">
+                                <div class="post-header">
+                                    <div class="post-avatar"><i class="fas fa-user"></i></div>
+                                    <div class="post-meta">
+                                        <div class="post-name">@alex_tech</div>
+                                        <div class="post-category"><i class="fas fa-headphones" style="margin-right: 0.25rem;"></i> Electronics · 2h ago</div>
+                                    </div>
+                                </div>
+                                <div class="post-content">
+                                    "Okay these headphones? Life-changing. Battery lasts forever. Like, actually forever."
+                                </div>
+                            </div>
+                            
+                            <div class="app-post">
+                                <div class="post-header">
+                                    <div class="post-avatar"><i class="fas fa-user"></i></div>
+                                    <div class="post-meta">
+                                        <div class="post-name">@maya_travels</div>
+                                        <div class="post-category"><i class="fas fa-plane" style="margin-right: 0.25rem;"></i> Travel Gear · 1d ago</div>
+                                    </div>
+                                </div>
+                                <div class="post-content">
+                                    "Found THE backpack. Survived a monsoon in Thailand and my laptop didn't even get damp."
+                                </div>
+                            </div>
+                            
+                            <div class="app-post">
+                                <div class="post-header">
+                                    <div class="post-avatar"><i class="fas fa-user"></i></div>
+                                    <div class="post-meta">
+                                        <div class="post-name">@jason_cooks</div>
+                                        <div class="post-category"><i class="fas fa-utensils" style="margin-right: 0.25rem;"></i> Kitchen · 3h ago</div>
+                                    </div>
+                                </div>
+                                <div class="post-content">
+                                    "This knife set. That's it. That's the post. (Seriously though, best purchase 2025.)"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" id="features" style="background: #1a1a2e;">
+        <div class="container">
+            <h2 class="section-title">What makes us different?</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem; color: rgba(255, 255, 255, 0.8);">
+                No algorithms, no sponsorships, no BS. Just humans helping humans find stuff that actually works.
+            </p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3 style="margin-bottom: 1rem; color: #FFD700;">Actually real reviews</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        We verify purchases. If someone hasn't bought it, they can't review it. Simple.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-users"></i></div>
+                    <h3 style="margin-bottom: 1rem; color: #FFD700;">Your people, your taste</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        Follow folks who like what you like. Build your own little recommendation squad.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 style="margin-bottom: 1rem; color: #FFD700;">Privacy? We got you</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        Share with everyone, just your close friends, or keep it to yourself. Your call.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Okay but how?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-compass"></i></div>
+                    <h3 style="margin-bottom: 1rem; color: #FFD700;">1. Find your tribe</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        Browse what real people are loving. Filter by category, price, or just see what's trending with people you trust.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-share-alt"></i></div>
+                    <h3 style="margin-bottom: 1rem; color: #FFD700;">2. Share the good stuff</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        Found something awesome? Snap a pic, write what you actually think (the good and the meh), and help someone out.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+                    <h3 style="margin-bottom: 1rem; color: #FFD700;">3. Build your network</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        Find people whose taste you trust. They find you. Suddenly shopping doesn't feel like a gamble anymore.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials" style="background: #1a1a2e;">
+        <div class="container">
+            <h2 class="section-title">Real humans, real stories</h2>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p style="margin-bottom: 1.5rem; color: rgba(255, 255, 255, 0.9);">
+                        "I was about to drop way too much on a laptop until someone here talked me out of it. Saved like $400. This app literally paid for itself."
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div class="post-avatar"><i class="fas fa-user-circle"></i></div>
+                        <div>
+                            <div style="font-weight: 700;">Sarah Chen</div>
+                            <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.6);">Freelance designer</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p style="margin-bottom: 1.5rem; color: rgba(255, 255, 255, 0.9);">
+                        "Traveling used to mean hours of research. Now I just check what other travelers on Onerdim actually packed. Game changer."
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div class="post-avatar"><i class="fas fa-user-circle"></i></div>
+                        <div>
+                            <div style="font-weight: 700;">Marcus Lee</div>
+                            <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.6);">Remote worker, perpetual traveler</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Guidelines Section -->
+    <section class="community-guidelines" id="guidelines">
+        <div class="guidelines-container">
+            <h2 class="guidelines-title">The Onerdim vibe</h2>
+            <p class="guidelines-subtitle">
+                We're building something different here. A place where people actually help people. Here's how we keep it that way.
+            </p>
+            
+            <div class="guidelines-grid">
+                <div class="guideline-card">
+                    <div class="guideline-icon"><i class="fas fa-heart"></i></div>
+                    <h3 class="guideline-heading">Keep it real</h3>
+                    <ul class="guideline-list">
+                        <li><i class="fas fa-check-circle" style="color: #FFD700; margin-right: 0.5rem;"></i>Only recommend stuff you've actually used</li>
+                        <li><i class="fas fa-check-circle" style="color: #FFD700; margin-right: 0.5rem;"></i>Tell us what's great AND what's not so great</li>
+                        <li><i class="fas fa-check-circle" style="color: #FFD700; margin-right: 0.5rem;"></i>Zero paid posts. Ever.</li>
+                        <li><i class="fas fa-check-circle" style="color: #FFD700; margin-right: 0.5rem;"></i>Verified purchases get more love</li>
+                    </ul>
+                    <div class="guideline-highlight">
+                        <p style="color: rgba(255, 255, 255, 0.9); font-size: 0.9rem;">
+                            <i class="fas fa-smile" style="margin-right: 0.5rem;"></i>Honest reviews = happier humans
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="guideline-card">
+                    <div class="guideline-icon"><i class="fas fa-hand-sparkles"></i></div>
+                    <h3 class="guideline-heading">Be cool</h3>
+                    <ul class="guideline-list">
+                        <li><i class="fas fa-check-circle" style="color: #FFD700; margin-right: 0.5rem;"></i>Keep feedback constructive</li>
+                        <li><i class="fas fa-check-circle" style="color: #FFD700; margin-right: 0.5rem;"></i>No hate. Like, actually zero.</li>
+                        <li><i class="fas fa-check-circle" style="color: #FFD700; margin-right: 0.5rem;"></i>Respect people's privacy</li>
+                        <li><i class="fas fa-check-circle" style="color: #FFD700; margin-right: 0.5rem;"></i>Stick to talking about the product</li>
+                    </ul>
+                    <div class="guideline-warning">
+                        <div class="warning-title">
+                            <i class="fas fa-exclamation-triangle" style="margin-right: 0.5rem;"></i>
+                            Not cool = not here
+                        </div>
+                        <p style="color: rgba(255, 255, 255, 0.9); font-size: 0.9rem;">
+                            Harassment or hate speech? Immediate bye-bye.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="guideline-card">
+                    <div class="guideline-icon"><i class="fas fa-scale-balanced"></i></div>
+                    <h3 class="guideline-heading">Keep it trustworthy</h3>
+                    <ul class="guideline-list">
+                        <li><i class="fas fa-check-circle" style="color: #FFD700; margin-right: 0.5rem;"></i>No affiliate links, no promotions</li>
+                        <li><i class="fas fa-check-circle" style="color: #FFD700; margin-right: 0.5rem;"></i>Don't mislead people</li>
+                        <li><i class="fas fa-check-circle" style="color: #FFD700; margin-right: 0.5rem;"></i>No spam, no repetition</li>
+                        <li><i class="fas fa-check-circle" style="color: #FFD700; margin-right: 0.5rem;"></i>See something sketchy? Report it.</li>
+                    </ul>
+                    <div class="guideline-highlight">
+                        <p style="color: rgba(255, 255, 255, 0.9); font-size: 0.9rem;">
+                            <i class="fas fa-handshake" style="margin-right: 0.5rem;"></i>Help us help each other
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="guidelines-cta">
+                <p class="cta-text">
+                    We're all in this together. Help us keep Onerdim a place where people actually want to hang out.
+                </p>
+                <a href="#" class="cta-button">
+                    <i class="fas fa-book-open" style="margin-right: 0.5rem;"></i>
+                    Read the full guidelines (if you're into that)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section" id="download" style="text-align: center; background: linear-gradient(135deg, #FFD700, #FFA500);">
+        <div class="container">
+            <h2 style="font-size: 3rem; margin-bottom: 1rem; color: #0a0a0f;">Ready to join?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(10, 10, 15, 0.9);">
+                No spam. No fake reviews. Just good people sharing good stuff.
+            </p>
+            <a href="https://play.google.com/store/apps/details?id=com.onderdim.app.onerdim" 
+               class="nav-cta" 
+               style="background: #0a0a0f; color: #FFD700; display: inline-block;"
+               target="_blank"
+               rel="noopener noreferrer">
+                <i class="fas fa-download" style="margin-right: 0.5rem;"></i>
+                Download free (yes, really)
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <div class="footer-logo">onerdim</div>
+                <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 1rem;">
+                    Real recommendations from real people. Because shopping shouldn't be a gamble.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3 style="color: #FFD700; margin-bottom: 1rem;">Explore</h3>
+                <p><a href="#" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;"><i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-right: 0.5rem;"></i>What we're about</a></p>
+                <p><a href="#" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;"><i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-right: 0.5rem;"></i>How it works</a></p>
+                <p><a href="#" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;"><i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-right: 0.5rem;"></i>Get the app</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h3 style="color: #FFD700; margin-bottom: 1rem;">Company</h3>
+                <p><a href="#" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;"><i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-right: 0.5rem;"></i>Our story</a></p>
+                <p><a href="#" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;"><i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-right: 0.5rem;"></i>Say hello</a></p>
+                <p><a href="#" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;"><i class="fas fa-chevron-right" style="font-size: 0.8rem; margin-right: 0.5rem;"></i>Join the team</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 Onerdim. All rights reserved. Made with <i class="fas fa-heart" style="color: #FFD700;"></i> and good intentions.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('active')) {
+                icon.className = 'fas fa-times';
+            } else {
+                icon.className = 'fas fa-bars';
+            }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.contains(event.target) && !mobileMenuBtn.contains(event.target)) {
+                mobileMenu.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.className = 'fas fa-bars';
+            }
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Active navigation link based on scroll position
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function updateActiveLink() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveLink);
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileMenu.classList.remove('active');
+                    const icon = mobileMenuBtn.querySelector('i');
+                    icon.className = 'fas fa-bars';
+                }
+            });
+        });
+
+        // Generate REAL QR Code using QRCode library
+        window.addEventListener('DOMContentLoaded', () => {
+            const qrContainer = document.getElementById('qrCodeContainer');
+            
+            // Clear any existing content
+            qrContainer.innerHTML = '';
+            
+            // Create canvas element
+            const canvas = document.createElement('canvas');
+            
+            // Generate actual QR code
+            QRCode.toCanvas(canvas, 'https://play.google.com/store/apps/details?id=com.onderdim.app.onerdim', {
+                width: 140,
+                margin: 2,
+                color: {
+                    dark: '#000000',
+                    light: '#FFFFFF'
+                }
+            }, function(error) {
+                if (error) {
+                    console.error(error);
+                    // Fallback if QR generation fails
+                    qrContainer.innerHTML = '<div style="width: 140px; height: 140px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; color: #333;">Scan</div>';
+                } else {
+                    // Add the canvas to the container
+                    qrContainer.appendChild(canvas);
+                    
+                    // Add the Ö logo overlay
+                    const canvas2 = document.createElement('canvas');
+                    canvas2.width = 140;
+                    canvas2.height = 140;
+                    const ctx2 = canvas2.getContext('2d');
+                    
+                    // Draw the original QR code
+                    ctx2.drawImage(canvas, 0, 0, 140, 140);
+                    
+                    // Add white circle for logo
+                    ctx2.fillStyle = '#FFFFFF';
+                    ctx2.beginPath();
+                    ctx2.arc(70, 70, 18, 0, 2 * Math.PI);
+                    ctx2.fill();
+                    
+                    // Add Ö logo
+                    ctx2.fillStyle = '#FFD700';
+                    ctx2.font = 'bold 20px Arial';
+                    ctx2.textAlign = 'center';
+                    ctx2.textBaseline = 'middle';
+                    ctx2.fillText('Ö', 70, 70);
+                    
+                    // Replace canvas with the one containing logo
+                    canvas.getContext('2d').clearRect(0, 0, 140, 140);
+                    canvas.getContext('2d').drawImage(canvas2, 0, 0, 140, 140);
+                }
+            });
+        });
+
+        // Initialize
+        updateActiveLink();
+    </script>
+</body>
+</html>
