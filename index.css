@@ -13,7 +13,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: #0a0a0f;
+            background: #666671;
             color: white;
             line-height: 1.6;
             overflow-x: hidden;
@@ -26,7 +26,7 @@
             left: 0;
             width: 100%;
             z-index: 1000;
-            background: rgba(10, 10, 15, 0.95);
+            background: #666671;
             backdrop-filter: blur(20px);
             padding: 1rem 0;
             border-bottom: 1px solid rgba(255, 215, 0, 0.2);
@@ -35,18 +35,20 @@
 
         .navbar.scrolled {
             padding: 0.7rem 0;
-            background: rgba(10, 10, 15, 0.98);
+            background:#666671;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
         }
 
         .nav-container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
+             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
+             
+     padding: 0 1rem; /* nice balance */
+}
+         
 
         .nav-logo {
             font-size: 1.8rem;
@@ -60,14 +62,18 @@
             align-items: center;
             gap: 8px;
             transition: transform 0.3s;
-        }
+           
+    margin-left: -20px;
+}
+         
 
         .nav-logo:hover {
             transform: scale(1.05);
         }
 
-        .logo-icon {
-            font-size: 1.2em;
+        .logo-icon img {
+            width: 6.6em;
+            height: 2.6em;
         }
 
         /* Desktop Navigation */
@@ -102,7 +108,7 @@
 
         .nav-cta {
             background: linear-gradient(135deg, #FFD700, #FFA500);
-            color: #0a0a0f;
+            color: #666671;
             padding: 0.7rem 1.8rem;
             border-radius: 25px;
             font-weight: 700;
@@ -142,7 +148,7 @@
             right: -100%;
             width: 300px;
             height: 100vh;
-            background: rgba(10, 10, 15, 0.98);
+            background: #666671;
             backdrop-filter: blur(20px);
             z-index: 999;
             transition: right 0.4s ease;
@@ -172,8 +178,8 @@
             min-height: 100vh;
             display: flex;
             align-items: center;
-            padding: 100px 0 50px;
-            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+            padding: 250px 0 50px;
+            background: linear-gradient(135deg, #666671 0%, #1a1a2e 100%);
             position: relative;
             overflow: hidden;
         }
