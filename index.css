@@ -33,7 +33,7 @@ body {
 
 .navbar.scrolled {
     padding: 0.7rem 0;
-    background: #666671;
+    background: rgb(102, 102, 113);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -49,7 +49,7 @@ body {
 .nav-logo {
     font-size: 1.8rem;
     font-weight: 900;
-    background: linear-gradient(45deg, #FFD700, #FFA500);
+    background: linear-gradient(45deg, #FFBB00FF, #FFBB00FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -68,7 +68,7 @@ body {
 .logo-icon {
     font-size: 1.8rem;
     font-weight: 900;
-    background: linear-gradient(45deg, #FFD700, #FFA500);
+    background: linear-gradient(45deg, #FFBB00FF, #FFBB00FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -100,7 +100,7 @@ body {
 }
 
 .nav-cta {
-    background: linear-gradient(135deg, #FFD700, #FFA500);
+    background: linear-gradient(135deg, #FFBB00FF, #FFBB00FF);
     color: #666671;
     padding: 0.7rem 1.8rem;
     border-radius: 25px;
@@ -145,7 +145,7 @@ body {
 
 .lang-current:hover {
     background: rgba(255, 215, 0, 0.12);
-    border-color: #FFD700;
+    border-color: #FFE099FF;
 }
 
 .lang-current i {
@@ -291,7 +291,7 @@ body {
     font-size: 4rem;
     font-weight: 900;
     margin-bottom: 1rem;
-    background: linear-gradient(45deg, #FFD700, #FFA500, #FFD700);
+    background: linear-gradient(45deg, #FFD700, #FFE099FF, #FFD700);
     background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -385,7 +385,7 @@ body {
 }
 
 .store-btn:hover {
-    background: linear-gradient(135deg, #FFD700, #FFA500);
+    background: linear-gradient(135deg, #FFD700, #FFE099FF);
     color: #0a0a0f;
     transform: translateX(5px);
 }
@@ -426,9 +426,8 @@ body {
     padding: 15px;
     box-shadow:
         0 40px 80px rgba(0, 0, 0, 0.7),
-        0 0 0 12px #1a1a2e,
-        0 0 0 16px #FFD700,
-        0 0 60px rgba(255, 215, 0, 0.5);
+         0 0 0 16px #FFD700,
+        0 0 60px #FFE099FF;
     position: relative;
     animation: phoneFloat 4s ease-in-out infinite;
 }
@@ -490,7 +489,7 @@ body {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: linear-gradient(45deg, #FFD700, #FFA500);
+    background: linear-gradient(45deg, #FFD700, #FFE099FF);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -534,7 +533,7 @@ body {
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 2rem;
-    background: linear-gradient(45deg, #FFD700, #FFA500);
+    background: linear-gradient(45deg, #FFD700, #FFE099FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -620,7 +619,7 @@ body {
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 1rem;
-    background: linear-gradient(45deg, #FFD700, #FFA500);
+    background: linear-gradient(45deg, #FFD700, #FFE099FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -740,7 +739,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(135deg, #FFD700, #FFA500);
+    background: linear-gradient(135deg, #FFD700, #FFE099FF);
     color: #0a0a0f;
     padding: 1rem 2.5rem;
     border-radius: 25px;
@@ -773,7 +772,7 @@ body {
 .footer-logo {
     font-size: 2rem;
     font-weight: 900;
-    background: linear-gradient(45deg, #FFD700, #FFA500);
+    background: linear-gradient(45deg, #FFD700, #FFE099FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
